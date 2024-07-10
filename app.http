@@ -1,0 +1,48 @@
+POST http://localhost:3000/register/
+Content-Type : application/json 
+{
+  "username": "adam_richard2",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+###
+
+POST http://localhost:3000/login
+Content-Type : application/json 
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+###
+GET http://localhost:3000/user/tweets/feed/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzIwNTI5Njg1fQ.FycFZBVCedhgKbENmI86bSIJupcP_MKrQlGI-Fbf3yA
+###
+GET http://localhost:3000/user/following/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzIwNTI5Njg1fQ.FycFZBVCedhgKbENmI86bSIJupcP_MKrQlGI-Fbf3yA
+###
+GET http://localhost:3000/user/followers/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzIwNTI5Njg1fQ.FycFZBVCedhgKbENmI86bSIJupcP_MKrQlGI-Fbf3yA
+###
+GET http://localhost:3000/tweets/10
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzIwNTI5Njg1fQ.FycFZBVCedhgKbENmI86bSIJupcP_MKrQlGI-Fbf3yA
+###
+GET http://localhost:3000/tweets/1/likes/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzIwNTI5Njg1fQ.FycFZBVCedhgKbENmI86bSIJupcP_MKrQlGI-Fbf3yA
+###
+GET http://localhost:3000/tweets/1/replies/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzIwNTI5Njg1fQ.FycFZBVCedhgKbENmI86bSIJupcP_MKrQlGI-Fbf3yA
+###
+GET http://localhost:3000/user/tweets/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzIwNTI5Njg1fQ.FycFZBVCedhgKbENmI86bSIJupcP_MKrQlGI-Fbf3yA
+###
+POST http://localhost:3000/user/tweets/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzIwNTI5Njg1fQ.FycFZBVCedhgKbENmI86bSIJupcP_MKrQlGI-Fbf3yA
+Content-Type : application/json 
+{
+   "tweet": "i LOVE YOU BABY "
+}
+###
+DELETE http://localhost:3000/tweets/14
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzIwNTI5Njg1fQ.FycFZBVCedhgKbENmI86bSIJupcP_MKrQlGI-Fbf3yA
